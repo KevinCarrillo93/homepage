@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -88,7 +89,7 @@ body {
   .contact-info__block {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
   }
 
   .contact-info__block--center {
@@ -123,9 +124,9 @@ body {
   }
 
   .contact-info__avatar {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
+      border-radius: 5%;
+      width: 300px;
+      height: 300px;
       object-fit: cover;
       border: 3px solid;
       border-color: var(--text-decoration-color);
@@ -260,3 +261,17 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+::-webkit-scrollbar{
+    width: 0.5em;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: rgb(228, 228, 228);
+    border-radius: 50vw;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color:var(--text-decoration-color);
+    border-radius: 50vw;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: var(--text-decoration-color);
+  }
